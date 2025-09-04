@@ -1,0 +1,31 @@
+.logo {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
+  will-change: transform;
+}
+.logo:hover {
+  transform: scale(1.12);
+}
+
+.navLink {
+  position: relative;
+  transition: color 0.3s;
+}
+.navLink::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0; right: 0; bottom: -4px;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.navLink:hover,
+.navLinkActive {
+  color: #fff !important;
+}
+.navLink:hover::after,
+.navLinkActive::after {
+  transform: scaleX(1);
+}

@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AbstracDev - Transformamos ideas complejas en soluciones simples',
+  title: 'AbstracDev',
   description: 'Empresa especializada en el desarrollo de software centrado en el usuario. Diseñamos soluciones digitales intuitivas y eficientes.',
 }
 
